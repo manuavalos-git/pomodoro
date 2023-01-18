@@ -56,7 +56,7 @@ export const initTimer=(seconds,minutes,setSeconds,setChange,change,setClickedSt
             drawSeconds(minutes,seconds,setSeconds,true,setChange,change,setClickedStart)
             clearInterval(intervalId);
         }
-    }, 10)
+    }, 1000)
     return intervalId
 }
 
