@@ -56,11 +56,11 @@ export const initTimer=(seconds,minutes,setSeconds,setChange,change,setClickedSt
             drawSeconds(minutes,seconds,setSeconds,true,setChange,change,setClickedStart)
             clearInterval(intervalId);
         }
-    }, 1000)
+    }, 10)
     return intervalId
 }
 
-export const drawSeconds=(minutes,seconds,setSeconds,finished,setChange,change,setClickedStart)=>{
+const drawSeconds=(minutes,seconds,setSeconds,finished,setChange,change,setClickedStart)=>{
     const progressCircle=document.getElementById("ring")
     progressCircle.style.backgroundColor="#000"
     if(!finished){
